@@ -9,14 +9,14 @@ class LocationsDock extends Dock
     public function configPaths()
     {
         return [
-            'docks.' . self::class => dirname(__DIR__, 2) . '/config/docks/locations.php',
+            'docks.' . self::class => dirname(__DIR__, 3) . '/config/docks/locations.php',
         ];
     }
 
     public function migrationPaths()
     {
         return [
-            dirname(__DIR__, 2) . '/database/migrations',
+            dirname(__DIR__, 3) . '/database/migrations',
         ];
     }
 }
